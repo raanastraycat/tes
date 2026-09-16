@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Harian Siswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Agenda Harian Siswa</h2>
+        <form action="simpan.php" method="POST" id="formAgenda">
+            <div class="form-group">
+                <label>Tanggal Aktivitas</label>
+                <input type="date" name="tanggal" id="tanggal">
+            </div>
+            <div class="form-group">
+                <label>Nama Aktivitas</label>
+                <input type="text" name="aktivitas" id="aktivitas" placeholder="Contoh: Belajar PHP Dasar">
+            </div>
+            <div class="form-group">
+                <label>Keterangan Tambahan</label>
+                <textarea name="keterangan" id="keterangan" placeholder="Detailaktivitas..."></textarea>
+            </div>
+            <button type="submit">Simpan Agenda</button>
+            <a href="tampil.php" class="btn-link">Lihat Daftar Agenda</a>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
